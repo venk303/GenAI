@@ -17,7 +17,7 @@ arxiv = ArxivQueryRun(api_wrapper= api_wrapper_arxiv)
 search = DuckDuckGoSearchRun(name = "Search")
 
 #side bar for settings
-st.title("Langchain - search")
+st.title("Search APP using Tools & Agents")
 
 st.sidebar.title("settings")
 api_key = st.sidebar.text_input("Enter GROQ api key:", type = "password")
@@ -25,7 +25,7 @@ api_key = st.sidebar.text_input("Enter GROQ api key:", type = "password")
 if api_key:
 
     if "messages" not in st.session_state:
-        st.session_state['messages'] = [{"role":"assistant", "content":"Hi, I am a chatbot for search type, let me know how can I help"}]
+        st.session_state['messages'] = [{"role":"assistant", "content":"Hi, I am a chatbot for search type, let me know how can I help \n Enter GROQ API key to Proceed"}]
     
     for msg in st.session_state.messages:
         st.chat_message(msg['role']).write(msg['content'])
