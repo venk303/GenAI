@@ -7,3 +7,4 @@ streamlit
 langchain-groq
 langchain-huggingface
 arxiv
+wikipedia
