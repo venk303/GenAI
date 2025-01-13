@@ -1,0 +1,9 @@
+langchain
+langchain_core
+python-dotenv
+langchain_community
+langchain-openai
+streamlit
+langchain-groq
+langchain-huggingface
+arxiv
