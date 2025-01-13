@@ -19,8 +19,8 @@ search = DuckDuckGoSearchRun(name = "Search")
 #side bar for settings
 st.title("Search APP using Tools & Agents")
 
-st.sidebar.title("settings")
-api_key = st.sidebar.text_input("Enter GROQ api key:", type = "password")
+st.sidebar.title("GROQ_API KEY")
+api_key = st.sidebar.text_input("Enter GROQ api key to proceed:", type = "password")
 
 if api_key:
 
